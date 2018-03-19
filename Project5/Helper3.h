@@ -1,0 +1,47 @@
+#include "node.h"
+
+using namespace std;
+
+int listNodeLength(node *n);
+
+bool listAtom(node *n);
+
+node *listisNull1(node *n);
+
+bool listisInteger(node *n);
+
+node *listcar1(node *n);
+
+node *listcdr1(node *n);
+
+int listcons1(node *left, node *right);
+
+node *listcons(node *left, node *right);
+
+bool listPLUS(node *left, node *right);
+
+bool listeq(node *left, node *right);
+
+bool listLESS(node *left, node *right);
+
+node *listeval(node *root);
+
+bool listcheckCond(node *root, bool check);
+
+node *listAnyBool(node *root, string type, int min);
+
+bool findAnyBool(node *root);
+
+node *listcond(node *root, bool check, node *n);
+
+node *listevalList(node *root);
+
+bool listcommand(node *root);
+
+node *listapply(node *function, node *parameters);
+
+bool listisNull(node *n);
+
+node *listcar(node *n);
+
+node *listcdr(node *n);
